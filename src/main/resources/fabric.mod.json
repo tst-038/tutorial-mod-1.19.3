@@ -5,21 +5,24 @@
 	"name": "Tutorial Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"tst-038"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/tutorial-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.tst.tutorialmod.ExampleMod"
+			"net.tst.tutorialmod.TutorialMod"
+		],
+		"client": [
+			"net.tst.tutorialmod.TutorialModClient"
 		],
 		"fabric-datagen": [
-			"net.tst.tutorialmod.ExampleModDataGenerator"
+			"net.tst.tutorialmod.TutorialModDataGenerator"
 		]
 	},
 	"mixins": [
