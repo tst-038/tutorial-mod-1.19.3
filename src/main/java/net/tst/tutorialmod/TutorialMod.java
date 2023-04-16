@@ -2,6 +2,7 @@ package net.tst.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tst.tutorialmod.block.ModBlocks;
 import net.tst.tutorialmod.item.ModItemGroup;
 import net.tst.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -18,5 +19,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
