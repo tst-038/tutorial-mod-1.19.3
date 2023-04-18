@@ -2,9 +2,12 @@ package net.tst.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.tst.tutorialmod.block.ModBlocks;
 import net.tst.tutorialmod.block.ModFlammableBlockRegistry;
 import net.tst.tutorialmod.block.ModStrippableBlockRegistry;
+import net.tst.tutorialmod.entity.ModEntities;
+import net.tst.tutorialmod.entity.custom.TigerEntity;
 import net.tst.tutorialmod.item.ModItemGroup;
 import net.tst.tutorialmod.item.ModItems;
 import net.tst.tutorialmod.world.gen.ModWorldGeneration;
@@ -28,5 +31,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModFlammableBlockRegistry.registerFlammableBlocks();
 		ModStrippableBlockRegistry.registerStrippableBlocks();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.TIGER, TigerEntity.setAttributes());
 	}
 }

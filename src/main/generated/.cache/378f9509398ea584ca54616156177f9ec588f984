@@ -1,0 +1,4 @@
+// 1.19.4	2023-04-18T22:04:20.104537	Tutorial Mod/Block Loot Tables
+e8a241b49c12cce625e8237f1ec565a6153d46d3 data/tutorial-mod/loot_tables/blocks/deepslate_uranium_ore.json
+41ee8d885e0c48a3d261b3e05462622ffa47678d data/tutorial-mod/loot_tables/blocks/uranium_ore.json
+532b874fe2e4a4561b8239ef5b56ddcad9719c48 data/tutorial-mod/loot_tables/blocks/uranium_block.json
