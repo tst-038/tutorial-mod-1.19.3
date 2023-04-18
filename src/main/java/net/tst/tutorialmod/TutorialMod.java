@@ -3,8 +3,11 @@ package net.tst.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.tst.tutorialmod.block.ModBlocks;
+import net.tst.tutorialmod.block.ModFlammableBlockRegistry;
+import net.tst.tutorialmod.block.ModStrippableBlockRegistry;
 import net.tst.tutorialmod.item.ModItemGroup;
 import net.tst.tutorialmod.item.ModItems;
+import net.tst.tutorialmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +23,10 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
+
+		ModFlammableBlockRegistry.registerFlammableBlocks();
+		ModStrippableBlockRegistry.registerStrippableBlocks();
 	}
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorial-mod:red_maple_log",
+    "tutorial-mod:red_maple_wood",
+    "tutorial-mod:stripped_red_maple_log",
+    "tutorial-mod:stripped_red_maple_wood"
+  ]
+}
