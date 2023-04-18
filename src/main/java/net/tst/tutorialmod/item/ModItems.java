@@ -10,9 +10,9 @@ import net.minecraft.util.Identifier;
 import net.tst.tutorialmod.TutorialMod;
 
 public class ModItems {
-    public static final Item CITRINE = registerItem("citrine",
+    public static final Item URANIUM_INGOT = registerItem("uranium_ingot",
             new Item(new FabricItemSettings()));
-    public static final Item RAW_CITRINE = registerItem("raw_citrine",
+    public static final Item RAW_URANIUM = registerItem("raw_uranium",
             new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
@@ -20,8 +20,8 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ModItemGroup.CITRINE, CITRINE);
-        addToItemGroup(ModItemGroup.CITRINE, RAW_CITRINE);
+        addToItemGroup(ModItemGroup.URANIUM, URANIUM_INGOT);
+        addToItemGroup(ModItemGroup.URANIUM, RAW_URANIUM);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item){

@@ -21,14 +21,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         // Smelting & Blasting
-        offerSmelting(exporter, List.of(ModItems.RAW_CITRINE, ModBlocks.CITRINE_ORE, ModBlocks.DEEPSLATE_CITRINE_ORE), RecipeCategory.MISC, ModItems.CITRINE,
-                0.7f, 200, "citrine");
+        offerSmelting(exporter, List.of(ModItems.RAW_URANIUM, ModBlocks.URANIUM_ORE, ModBlocks.DEEPSLATE_URANIUM_ORE), RecipeCategory.MISC, ModItems.URANIUM_INGOT,
+                0.7f, 200, "uranium");
 
-        offerBlasting(exporter, List.of(ModItems.RAW_CITRINE, ModBlocks.CITRINE_ORE, ModBlocks.DEEPSLATE_CITRINE_ORE), RecipeCategory.MISC, ModItems.CITRINE,
-                0.7f, 100, "citrine");
+        offerBlasting(exporter, List.of(ModItems.RAW_URANIUM, ModBlocks.URANIUM_ORE, ModBlocks.DEEPSLATE_URANIUM_ORE), RecipeCategory.MISC, ModItems.URANIUM_INGOT,
+                0.7f, 100, "uranium");
 
-        // Block to Citrine & Citrine to Block recipe
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.CITRINE, RecipeCategory.DECORATIONS,
-                ModBlocks.CITRINE_BLOCK);
+        // Block to Uranium & Uranium to Block recipe
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.URANIUM_INGOT, RecipeCategory.DECORATIONS,
+                ModBlocks.URANIUM_BLOCK);
     }
 }

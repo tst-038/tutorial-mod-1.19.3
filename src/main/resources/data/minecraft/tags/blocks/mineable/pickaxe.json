@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "tutorial-mod:citrine_ore",
-    "tutorial-mod:deepslate_citrine_ore",
-    "tutorial-mod:citrine_block"
+    "tutorial-mod:uranium_ore",
+    "tutorial-mod:deepslate_uranium_ore",
+    "tutorial-mod:uranium_block"
   ]
 }

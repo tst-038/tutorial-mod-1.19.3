@@ -15,9 +15,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CITRINE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CITRINE_ORE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_CITRINE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.URANIUM_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.URANIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_URANIUM_ORE);
 
         blockStateModelGenerator.registerLog(ModBlocks.RED_MAPLE_LOG).log(ModBlocks.RED_MAPLE_LOG)
                 .wood(ModBlocks.RED_MAPLE_WOOD);
@@ -32,7 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.CITRINE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_CITRINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.URANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_URANIUM, Models.GENERATED);
     }
 }

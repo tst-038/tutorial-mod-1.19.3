@@ -20,17 +20,17 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RED_MAPLE_KEY = registerKey("red_maple");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CITRINE_ORE_KEY = registerKey("citrine_ore_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> URANIUM_ORE_KEY = registerKey("uranium_ore_key");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceAbles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceAbles = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreFeatureConfig.Target> overworldCitrineOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceAbles, ModBlocks.CITRINE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceAbles, ModBlocks.DEEPSLATE_CITRINE_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(stoneReplaceAbles, ModBlocks.URANIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceAbles, ModBlocks.DEEPSLATE_URANIUM_ORE.getDefaultState()));
         //Vein size
-        register(context, CITRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCitrineOres, 9, 0.5f));
+        register(context, URANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCitrineOres, 9, 0.5f));
 
         register(context, RED_MAPLE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.RED_MAPLE_LOG),

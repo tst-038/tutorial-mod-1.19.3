@@ -17,34 +17,34 @@ import net.tst.tutorialmod.world.tree.RedMapleSaplingGenerator;
 
 public class ModBlocks {
 
-    public static final Block CITRINE_BLOCK = registerBlock("citrine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+    public static final Block URANIUM_BLOCK = registerBlock("uranium_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
 
-    public static final Block CITRINE_ORE = registerBlock("citrine_ore",
+    public static final Block URANIUM_ORE = registerBlock("uranium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(2, 6)), ModItemGroup.CITRINE);
+                    UniformIntProvider.create(2, 6)), ModItemGroup.URANIUM);
 
-    public static final Block DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
+    public static final Block DEEPSLATE_URANIUM_ORE = registerBlock("deepslate_uranium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(2, 6)), ModItemGroup.CITRINE);
+                    UniformIntProvider.create(2, 6)), ModItemGroup.URANIUM);
 
 
 
     public static final Block RED_MAPLE_LOG = registerBlock("red_maple_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
     public static final Block RED_MAPLE_WOOD = registerBlock("red_maple_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
     public static final Block STRIPPED_RED_MAPLE_LOG = registerBlock("stripped_red_maple_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
     public static final Block STRIPPED_RED_MAPLE_WOOD = registerBlock("stripped_red_maple_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
 
     public static final Block RED_MAPLE_PLANKS = registerBlock("red_maple_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
     public static final Block RED_MAPLE_LEAVES = registerBlock("red_maple_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
     public static final Block RED_MAPLE_SAPLING = registerBlock("red_maple_sapling",
-            new SaplingBlock(new RedMapleSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), ModItemGroup.CITRINE);
+            new SaplingBlock(new RedMapleSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()), ModItemGroup.URANIUM);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

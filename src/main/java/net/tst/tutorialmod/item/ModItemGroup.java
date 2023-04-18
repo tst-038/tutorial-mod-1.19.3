@@ -8,11 +8,11 @@ import net.minecraft.util.Identifier;
 import net.tst.tutorialmod.TutorialMod;
 
 public class ModItemGroup {
-    public static ItemGroup CITRINE;
+    public static ItemGroup URANIUM;
 
     public static void registerItemGroup() {
-        CITRINE = FabricItemGroup.builder(new Identifier(TutorialMod.MOD_ID, "citrine"))
-                .displayName(Text.translatable("itemgroup.citrine"))
-                .icon(() -> new ItemStack(ModItems.RAW_CITRINE)).build();
+        URANIUM = FabricItemGroup.builder(new Identifier(TutorialMod.MOD_ID, "uranium"))
+                .displayName(Text.translatable("itemgroup.uranium"))
+                .icon(() -> new ItemStack(ModItems.RAW_URANIUM)).build();
     }
 }

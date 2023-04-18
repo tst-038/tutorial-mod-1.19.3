@@ -1,12 +1,12 @@
 {
-  "itemgroup.citrine": "Citrine Mod",
+  "itemgroup.uranium": "Uranium Mod",
 
-  "item.tutorial-mod.citrine": "Citrine",
-  "item.tutorial-mod.raw_citrine": "Raw Citrine",
+  "item.tutorial-mod.uranium": "Uranium",
+  "item.tutorial-mod.raw_uranium": "Raw Uranium",
 
-  "block.tutorial-mod.citrine_ore": "Citrine Ore",
-  "block.tutorial-mod.deepslate_citrine_ore": "Deepslate Citrine Ore",
-  "block.tutorial-mod.citrine_block": "Citrine Block",
+  "block.tutorial-mod.uranium_ore": "Uranium Ore",
+  "block.tutorial-mod.deepslate_uranium_ore": "Deepslate Uranium Ore",
+  "block.tutorial-mod.uranium_block": "Uranium Block",
   "block.tutorial-mod.red_maple_log": "Red Maple Log",
   "block.tutorial-mod.red_maple_wood": "Red Maple Wood",
   "block.tutorial-mod.stripped_red_maple_log": "Stripped Red Maple Log",
