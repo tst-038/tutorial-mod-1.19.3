@@ -30,7 +30,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceAbles, ModBlocks.CITRINE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceAbles, ModBlocks.DEEPSLATE_CITRINE_ORE.getDefaultState()));
         //Vein size
-        register(context, CITRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCitrineOres, 9));
+        register(context, CITRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCitrineOres, 9, 0.5f));
 
         register(context, RED_MAPLE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.RED_MAPLE_LOG),
